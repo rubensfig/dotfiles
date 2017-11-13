@@ -14,7 +14,7 @@ alias lock='sh /usr/local/bin/i3lock-fancy/lock'
 alias runcawr=' cd ~/code/vagrant/cawr && vagrant ssh'
 alias vssh='vagrant ssh'
 alias activate='if [ ! -d .env ]; then 
-                    virtualenv .env
+                    virtualenv .env -p python3
                 fi
                 source .env/bin/activate'
 alias xxx='xdg-open'
