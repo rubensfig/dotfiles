@@ -20,3 +20,5 @@ alias activate='if [ ! -d .env ]; then
 alias xxx='xdg-open'
 alias vcd='cd ~/code/vagrant/ && cd $1'
 alias findfile='find . -name $1'
+alias gis='git status'
+
