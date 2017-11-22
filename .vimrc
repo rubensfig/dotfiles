@@ -99,8 +99,8 @@ endif
 let &guicursor = &guicursor . ",a:blinkon0"
 
 filetype plugin indent on
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 set number
@@ -110,5 +110,21 @@ filetype plugin on
 map <F3> :bn <CR>
 map <F2> :bp <CR>
 map <F4> :bd <CR>
+map <F5> :ls <CR>
 
+" copy
+vmap <C-Space> "ay
+nmap <C-Space> "aP
+imap <C-Space> <C-o>"ap
+nmap <C-c> "ayiw
+
+
+" copy
+vmap <C-c> "+y
+nmap <C-p> "+p
+imap <C-p> <Esc>"ppa
+
+" source current
+map <C-s> :w <CR>
+map <C-l> :! ls <CR>
 colorscheme slate
