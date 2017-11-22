@@ -169,6 +169,7 @@ mode "resize" {
 bindsym Mod1+r mode "resize"
 
 for_window [class="^.*"] border pixel 1
+for_window [class="Gitk"] floating enable
 
 exec --no-startup-id feh --bg-fill ~/Pictures/background.jpg
 exec --no-startup-id compton -b

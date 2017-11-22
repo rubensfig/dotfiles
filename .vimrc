@@ -23,6 +23,8 @@ Plugin 'git://git.wincent.com/command-t.git'
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'chiedo/vim-sort-blocks-by'
+Plugin 'scrooloose/nerdcommenter'
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
@@ -113,13 +115,12 @@ map <F4> :bd <CR>
 map <F5> :ls <CR>
 
 " copy
-vmap <C-Space> "ay
+vmap <C-Space> "ap
 nmap <C-Space> "aP
 imap <C-Space> <C-o>"ap
 nmap <C-c> "ayiw
 
-
-" copy
+" paste
 vmap <C-c> "+y
 nmap <C-p> "+p
 imap <C-p> <Esc>"ppa
@@ -127,4 +128,5 @@ imap <C-p> <Esc>"ppa
 " source current
 map <C-s> :w <CR>
 map <C-l> :! ls <CR>
+
 colorscheme slate
