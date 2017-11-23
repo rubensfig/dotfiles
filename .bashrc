@@ -22,3 +22,7 @@ alias vcd='cd ~/code/vagrant/ && cd $1'
 alias findfile='find . -name $1'
 alias gis='git status'
 
+alias ..='cd ..'
+alias ...='cd ../../'
+
+alias grep='grep --color=auto'
