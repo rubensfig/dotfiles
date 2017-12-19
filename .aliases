@@ -1,0 +1,17 @@
+alias python='python2.7'
+alias lock='sh /usr/local/bin/i3lock-fancy/lock'
+alias runcawr=' cd ~/code/vagrant/cawr && vagrant ssh'
+alias vssh='vagrant ssh'
+alias activate='if [[ ! -d .env ]]; then 
+                    virtualenv .env -p python3
+                fi
+                source .env/bin/activate'
+alias xxx='xdg-open'
+alias vcd='cd $HOME/code/vagrant/ && cd $1'
+alias findfile='find . -name $1'
+alias gis='git status'
+
+alias ..='cd ..'
+alias ...='cd ../../'
+
+alias grep='grep --color=auto'
