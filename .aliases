@@ -1,4 +1,4 @@
-alias python='python2.7'
+alias python='python3.6'
 alias lock='sh /usr/local/bin/i3lock-fancy/lock'
 alias runcawr=' cd ~/code/vagrant/cawr && vagrant ssh'
 alias vssh='vagrant ssh'
@@ -13,5 +13,17 @@ alias gis='git status'
 
 alias ..='cd ..'
 alias ...='cd ../../'
+alias ...='cd ../../'
+
+# Docker aliases
+
+alias dex='sudo docker exec -ti $1'
+alias dlgs='sudo docker logs $1'
+alias dps='sudo docker ps -a'
+alias dbi='sudo docker build -t  ${PWD##*/} .'
+alias dcup='sudo docker-compose up -d'
+alias dcdn='sudo docker-compose down'
+
+alias saliases='source $HOME/.zshrc'
 
 alias grep='grep --color=auto'
