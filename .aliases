@@ -1,4 +1,4 @@
-alias python='python3.6'
+alias python='python3'
 alias lock='sh /usr/local/bin/i3lock-fancy/lock'
 alias runcawr=' cd ~/code/vagrant/cawr && vagrant ssh'
 alias vssh='vagrant ssh'
@@ -25,5 +25,8 @@ alias dcup='sudo docker-compose up -d'
 alias dcdn='sudo docker-compose down'
 
 alias saliases='source $HOME/.zshrc'
+
+alias docmake='latexmk -pdf -pvc -xelatex -interaction=nonstopmode  ./main.tex -f &'
+alias docclean='latexmk -c'
 
 alias grep='grep --color=auto'
