@@ -1,4 +1,5 @@
 alias python='python3'
+alias pip='pip3'
 alias lock='sh /usr/local/bin/i3lock-fancy/lock'
 alias runcawr=' cd ~/code/vagrant/cawr && vagrant ssh'
 alias vssh='vagrant ssh'
@@ -19,6 +20,7 @@ alias ...='cd ../../'
 
 alias dex='sudo docker exec -ti $1'
 alias dlgs='sudo docker logs $1'
+alias dins='sudo docker inspect $1'
 alias dps='sudo docker ps -a'
 alias dbi='sudo docker build -t  ${PWD##*/} .'
 alias dcup='sudo docker-compose up -d'
@@ -30,3 +32,5 @@ alias docmake='latexmk -pdf -pvc -xelatex -interaction=nonstopmode  ./main.tex -
 alias docclean='latexmk -c'
 
 alias grep='grep --color=auto'
+alias dog='lolcat'
+alias soundrestore='alsactl restore'

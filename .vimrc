@@ -25,6 +25,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'chiedo/vim-sort-blocks-by'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'vim-latex/vim-latex'
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
@@ -124,6 +125,8 @@ nmap <C-c> "ayiw
 vmap <C-c> "+y
 nmap <C-p> "+p
 imap <C-p> <Esc>"ppa
+
+inoremap jk <Esc>
 
 " source current
 map <C-s> :w <CR>
