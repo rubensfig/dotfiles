@@ -1,17 +1,20 @@
-alias python='python3'
+#alias python='python3'
 alias pip='pip3'
-alias lock='sh /usr/local/bin/i3lock-fancy/lock'
-alias runcawr=' cd ~/code/vagrant/cawr && vagrant ssh'
-alias vssh='vagrant ssh'
+
 alias activate='if [[ ! -d .env ]]; then 
                     virtualenv .env -p python3
                 fi
                 source .env/bin/activate'
-alias xxx='xdg-open'
+
+# Vagrant aliases
 alias vcd='cd $HOME/code/vagrant/ && cd $1'
-alias findfile='find . -name $1'
+alias vssh='vagrant ssh'
+
+# Git aliases
 alias gis='git status'
 
+# Directory aliases
+alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo ' 
 alias ..='cd ..'
 alias ...='cd ../../'
 alias ...='cd ../../'
@@ -19,18 +22,36 @@ alias ...='cd ../../'
 # Docker aliases
 
 alias dex='sudo docker exec -ti $1'
+alias drun='sudo docker run -d --name ${PWD##*/} ${PWD##*/} /bin/bash'
 alias dlgs='sudo docker logs $1'
 alias dins='sudo docker inspect $1'
 alias dps='sudo docker ps -a'
 alias dbi='sudo docker build -t  ${PWD##*/} .'
+alias dkill='sudo docker rm -f $(sudo docker ps -aq)'
+
 alias dcup='sudo docker-compose up -d'
 alias dcdn='sudo docker-compose down'
 
-alias saliases='source $HOME/.zshrc'
+# Latex/thesis aliases
 
 alias docmake='latexmk -pdf -pvc -xelatex -interaction=nonstopmode  ./main.tex -f &'
 alias docclean='latexmk -c'
 
-alias grep='grep --color=auto'
-alias dog='lolcat'
-alias soundrestore='alsactl restore'
+# Script aliases
+alias ci='source $HOME/.scripts/compile_install.sh'
+alias cformat='source $HOME/.scripts/cformat.sh'
+alias tssh='source $HOME/.scripts/tssh.sh'
+alias mssh='source $HOME/.scripts/multiple_ssh.sh'
+alias brpm='source $HOME/.scripts/build_rpm.sh $1 $2 $3'
+alias setupping='$HOME/.scripts/setupping.py'
+alias xion-vpn='source $HOME/.scripts/openvpn.sh'
+
+alias svim='sudo vim'
+alias gvim='gvim .' 
+
+alias genc='ctags -R .'
+
+# Alias
+
+alias sal='source $HOME/.zshrc'
+
